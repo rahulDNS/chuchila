@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css'; // Make sure this line is here to apply animations
 
 const App = () => {
   const [players, setPlayers] = useState(['', '', '', '']);
@@ -37,7 +38,7 @@ const App = () => {
   };
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial' }}>
+    <div className="container">
       <h1>🂡 Chuchila Scoreboard</h1>
 
       {players.map((name, i) => (
@@ -50,7 +51,7 @@ const App = () => {
           />
           <input
             type="number"
-            placeholder="Kati Khayo lekham: "
+            placeholder="Kati Point Khaayo: "
             value={roundPoints[i]}
             onChange={(e) => handlePointChange(i, e.target.value)}
             style={{ marginLeft: '10px' }}
@@ -59,7 +60,7 @@ const App = () => {
       ))}
 
       <button onClick={handleSubmit} disabled={winner !== ''}>Submit Round</button>
-      <button onClick={handleReset} style={{ marginLeft: '10px' }}>Reset</button>
+      <button onClick={handleReset} style={{ marginLeft: '10px' }}>Newgame</button>
 
       <h2>Current Scores:</h2>
       <ul>
@@ -71,7 +72,7 @@ const App = () => {
       </ul>
 
       {winner && (
-        <h2 style={{ color: 'green' }}>🎉 Winner: {winner} 🎉</h2>
+        <h2 className="winner">🎉 Winner: {winner} </h2>
       )}
     </div>
   );
