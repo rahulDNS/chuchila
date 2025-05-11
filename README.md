@@ -46,6 +46,10 @@ This web app lets you:
 
 Just open the app, type in player names, enter scores per round, and hit "Submit Round". The app takes care of everything else — no pen and paper needed!
 
+https://chuchila.vercel.app/
+
+You can directly run this on your browser and start playing today. 
+
 ---
 
 ## 💬 Final Note
