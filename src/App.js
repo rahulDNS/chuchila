@@ -31,11 +31,11 @@ const App = () => {
   };
 
   const handleReset = () => {
-    setPlayers(['', '', '', '']);
     setScores([0, 0, 0, 0]);
     setRoundPoints(['', '', '', '']);
     setWinner('');
   };
+  
 
   return (
     <div className="container">
@@ -51,7 +51,7 @@ const App = () => {
           />
           <input
             type="number"
-            placeholder="Kati Point Khaayo: "
+            placeholder="Kati Point ho: "
             value={roundPoints[i]}
             onChange={(e) => handlePointChange(i, e.target.value)}
             style={{ marginLeft: '10px' }}
