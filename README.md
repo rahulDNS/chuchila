@@ -50,7 +50,7 @@ Just open the app, type in player names, enter scores per round, and hit "Submit
 
 ## 💬 Final Note
 
-This isn't just a game for us — it's a weekend ritual full of banter, food, and memories.  
+This isn't just a game for us — it's a weekend ritual full of banter, beer,  food, and memories.  
 Hope you enjoy playing Chuchila with your friends too! CHEERS 
 
 —
